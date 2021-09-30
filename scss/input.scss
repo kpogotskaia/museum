@@ -26,6 +26,9 @@ body {
     border-bottom: 3px solid #710707;
 }
 
+
+// desctope 
+
 header {
     background-color: #030303;
 
@@ -191,11 +194,7 @@ header {
     }
 }
 
-main {
-
-    .container {
-
-        .visiting-section {
+.visiting-section {
             margin-top: 75px;
 
             .section-title {
@@ -256,8 +255,38 @@ main {
                     }
                 }
             }
-        }
-    }
 }
 
+.explore-section {
+    background-color: #030303;
+    
+    &__content {
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+
+        &-description {
+            max-width: 660px;
+
+            .explore-section__pharagraph {
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 38px;
+                color: #FFFFFF; 
+                
+                span {
+                    color: #9d8665;
+                }
+            }
+        }
+
+        &-slider {
+            padding: 82px 0 75px;
+            max-width: 720px;
+        }
+    }
+
+}
 
