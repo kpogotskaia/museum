@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    font-family: "Forum", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+header {
+    background-color: #030303;
+
+    .container {
+        margin: 0 240px;
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            &__logo { 
+                margin: 60px 0;               
+                transition: 1s;
+
+                a {
+                    margin-left: 25px;
+                    font-family: "Forum", sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 31px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-decoration: none;
+
+                    .logo-img {
+                        width: 49px;
+                        height: 26px;                          
+                    }                    
+                }
+            }
+        
+            .nav {
+                margin: 62px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 720px;
+                
+                &__item {
+                    padding: 0 25px;
+                    list-style: none;
+                     
+                    &-link {
+                        text-decoration: none;
+                        font-family: "Roboto", sans-serif;
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 22px;
+                        line-height: 26px;
+                        letter-spacing: 2px;
+                        color: #FFFFFF;
+        
+                        &:hover {
+                            color: #9d8665;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-content {
+            position: relative;
+            margin-top: 30px;
+            max-height: 750px;
+            max-width: 1440px;
+            background-image: url(//assets/first-screen.png) #030303 no-repeat;
+            background-size: cover;
+            background-position: calc(100% - 20px) calc(100% - 10px);
+
+            .section-title {
+                margin: 150px 0 0;
+            }
+
+            .section-pharagraph {
+                margin: 25px 0 75px;
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 33px;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+            }
+            
+            .button {
+                margin-bottom: 270px;
+                width: 360px;
+                height: 75px;
+                background: #710707;
+                border-radius: 10px;
+                border: none;
+
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+            }
+
+            &__slider {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 600px;
+                height: 120px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-count {
+
+                    span {
+                        font-family: "Roboto", sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 22px;
+                        line-height: 40px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }                    
+                }
+
+                &-pagination {
+                    max-width: 180px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .pagination {
+                        margin-right: 20px;
+                        width: 16px;
+                        height: 16px;
+                        border: none;
+                        background-color: #fff;
+
+                        &:hover {
+                            background-color: #9d8665;
+                        }
+                    }
+
+                    .active {
+                        width: 16px;
+                        height: 16px;
+                        border: none;
+                        background-color: #9d8665;
+                    }
+
+                }
+
+                &-arrow {
+                    img:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
