@@ -1,4 +1,159 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-family: "Forum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+header {
+  background-color: #030303;
+}
+header .container {
+  margin: 0 240px;
+}
+header .container .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header-container__logo {
+  margin: 60px 0;
+  transition: 1s;
+}
+header .container .header-container__logo a {
+  margin-left: 25px;
+  font-family: "Forum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .container .header-container__logo a .logo-img {
+  width: 49px;
+  height: 26px;
+}
+header .container .header-container .nav {
+  margin: 62px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+}
+header .container .header-container .nav__item {
+  padding: 0 25px;
+  list-style: none;
+}
+header .container .header-container .nav__item-link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+header .container .header-container .nav__item-link:hover {
+  color: #9d8665;
+}
+header .container .header-content {
+  position: relative;
+  margin-top: 30px;
+  max-height: 750px;
+  max-width: 1440px;
+  background-image: url(//assets/first-screen.png) #030303 no-repeat;
+  background-size: cover;
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
+header .container .header-content .section-title {
+  margin: 150px 0 0;
+}
+header .container .header-content .section-pharagraph {
+  margin: 25px 0 75px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+header .container .header-content .button {
+  margin-bottom: 270px;
+  width: 360px;
+  height: 75px;
+  background: #710707;
+  border-radius: 10px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+header .container .header-content__slider {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header-content__slider-count span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header .container .header-content__slider-pagination {
+  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header-content__slider-pagination .pagination {
+  margin-right: 20px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #fff;
+}
+header .container .header-content__slider-pagination .pagination:hover {
+  background-color: #9d8665;
+}
+header .container .header-content__slider-pagination .active {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #9d8665;
+}
+header .container .header-content__slider-arrow img:first-child {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
